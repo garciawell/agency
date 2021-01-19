@@ -1,0 +1,52 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "plugins": [
+    "prettier",
+    "react-hooks"
+  ],
+  "extends": [
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier",
+    "react-app"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "settings": {
+    "react": {
+      "version": "17.0.1"
+    },
+    "import/resolver": {
+      "babel-module": {},
+      "node": {
+        "paths": [
+          "./"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": "ignore",
+    "react/no-danger": "off",
+    "no-alert": "error",
+    "no-debugger": "error",
+    "no-console": "error"
+  }
+}

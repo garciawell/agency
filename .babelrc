@@ -1,0 +1,32 @@
+{
+	"presets": [
+		"next/babel"
+	],
+	"plugins": [
+		[
+			"styled-components",
+			{
+				"ssr": true,
+				"displayName": true,
+				"preprocess": false
+			}
+		],
+		[
+			"module-resolver",
+			{
+				"root": [
+					"."
+				],
+				"alias": {
+					"@components": "./src/components",
+					"@layouts": "./src/layouts",
+					"@pages": "./src/pages",
+					"@theme": "./src/theme",
+					"@utils": "./src/utils",
+					"@screens": "./src/screens",
+					"@icons": "./public/static/icons"
+				}
+			}
+		]
+	]
+}

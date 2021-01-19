@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "*"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@layouts": [
+        "src/layouts"
+      ],
+      "@pages": [
+        "src/pages"
+      ],
+      "@theme": [
+        "src/theme"
+      ],
+      "@screens": [
+        "src/screens"
+      ],
+      "@icons": [
+        "public/static/icons"
+      ]
+    }
+  }
+}

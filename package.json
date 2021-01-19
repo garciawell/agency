@@ -1,0 +1,71 @@
+{
+  "name": "lessframework",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-espinola/LESSFramework.git"
+  },
+  "keywords": [
+    "landing-page",
+    "checkout"
+  ],
+  "author": "Ivan Espinola G.- <ivan.espinola@live.com>",
+  "license": "SEE LICENSE IN <https://github.com/i-espinola/LESSFramework/LICENSE>",
+  "bugs": {
+    "url": "https://github.com/i-espinola/LESSFramework/issues"
+  },
+  "readme": "https://github.com/i-espinola/LESSFramework#readme",
+  "homepage": ".",
+  "scripts": {
+    "clean": "rm -rf ./build ./dist ./.next ./out ./package-lock.json ./yarn.lock ./*.log ./tsconfig.tsbuildinfo",
+    "format": "prettier --write src/**/*.{js, jsx, ts,tsx,scss,css,json}",
+    "lint": "eslint --ext .js,jsx,.ts,.tsx src --color",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "next": "^10.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^5.4.0",
+    "@zeit/next-source-maps": "^0.0.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "del-cli": "^3.0.1",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-import-resolver-babel-module": "^5.2.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.1.2",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  }
+}
