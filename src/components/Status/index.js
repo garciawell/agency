@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Anchor } from '@components';
-import { PageStatus } from './Styled';
 import { useRouter } from 'next/router';
+import { PageStatus } from './Styled';
 
 const Status = ({ loading, notFound, error, seconds = 10 }) => {
   const [timer, setTimer] = useState(seconds);
@@ -21,7 +21,7 @@ const Status = ({ loading, notFound, error, seconds = 10 }) => {
   }, [timer]);
 
   const BtnHome = (
-    <Anchor block={true} href="/">
+    <Anchor block href="/">
       Início
     </Anchor>
   );
@@ -56,11 +56,7 @@ const Status = ({ loading, notFound, error, seconds = 10 }) => {
             <h1>{data?.message || ''}</h1>
           </div>
         </div>
-        {data.info ? (
-          <p>você sera redirecionado em {timer} segundos.</p>
-        ) : (
-          false
-        )}
+        {data.info ? <p>você sera redirecionado em{timer} segundos.</p> : false}
         {data.button ? BtnHome : false}
       </div>
     </PageStatus>

@@ -7,7 +7,7 @@ const color = {
   medium: '#636363',
   dark: '#2C2C2E',
   black: '#000000',
-  
+
   grey0: '#F2F2F7',
   grey1: '#E5E5EA',
   grey2: '#D1D1D6',
@@ -37,4 +37,4 @@ const color = {
 };
 
 export default color;
-export {color}
+export { color };

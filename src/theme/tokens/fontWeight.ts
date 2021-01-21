@@ -4,7 +4,7 @@ const textWeight = {
   bold: '800',
   black: '900',
   default: '400',
-}
+};
 
-export default  textWeight;
-export {textWeight}
+export default textWeight;
+export { textWeight };

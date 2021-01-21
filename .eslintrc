@@ -1,52 +1,65 @@
 {
   "env": {
     "browser": true,
-    "node": true,
     "es6": true,
     "jest": true
   },
-  "plugins": [
-    "prettier",
-    "react-hooks"
-  ],
   "extends": [
-    "airbnb/hooks",
-    "airbnb-typescript",
-    "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended",
-    "prettier",
-    "react-app"
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "camelcase": "off",
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".tsx", ".ts"] }
+    ],
+    "react/prop-types": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "jsx-a11y/anchor-is-valid": ["off"],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
   },
   "settings": {
     "react": {
       "version": "17.0.1"
     },
     "import/resolver": {
+      "typescript": {},
       "babel-module": {},
       "node": {
-        "paths": [
-          "./"
-        ]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
-  },
-  "rules": {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-props-no-spreading": "ignore",
-    "react/no-danger": "off",
-    "no-alert": "error",
-    "no-debugger": "error",
-    "no-console": "error"
   }
 }

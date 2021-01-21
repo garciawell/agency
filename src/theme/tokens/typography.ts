@@ -21,7 +21,7 @@ const text = {
     color: color.black,
     lineHeight: textSize.big,
   },
-}
+};
 
 export default text;
-export {text}
+export { text };

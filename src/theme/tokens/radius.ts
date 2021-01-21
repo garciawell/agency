@@ -5,7 +5,7 @@ const radius = {
   medium: '.8rem',
   big: '2rem',
   round: '50%',
-}
+};
 
 export default radius;
-export {radius}
+export { radius };

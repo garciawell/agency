@@ -6,7 +6,7 @@ const container = {
     marginRight: 'auto',
     marginLeft: 'auto',
   },
-}
+};
 
 export default container;
-export {container}
+export { container };

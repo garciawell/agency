@@ -9,7 +9,7 @@ const border = {
   light: `1px solid ${color.light}`,
   medium: `1px solid ${color.medium}`,
   dark: `1px solid ${color.dark}`,
-}
+};
 
 export default border;
-export {border}
+export { border };

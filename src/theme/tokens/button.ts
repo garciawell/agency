@@ -57,7 +57,7 @@ const button = {
       color: color.primary,
     },
   },
-}
+};
 
 export default button;
-export {button}
+export { button };

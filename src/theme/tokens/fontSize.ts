@@ -6,7 +6,7 @@ const fontSize = {
   medium: '1rem',
   big: '3.1rem',
   xl: '5rem',
-}
+};
 
 export default fontSize;
-export {fontSize}
+export { fontSize };
